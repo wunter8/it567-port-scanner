@@ -39,3 +39,18 @@ optional arguments:
 			(Default: tcp_connect)
   --html HTML           Store results to HTML file
 ```
+
+## Grading Rubric Features
+* command-line switches for host and port
+* simple response to user
+* text file with hosts
+* subnet mask host entry
+* range host entry
+* multiple ports
+* ICMP
+* UDP
+* TCP
+* UDP traceroute
+* export to HTML file
+* Extra:
+  * TCP Stealth/Half-open scan
