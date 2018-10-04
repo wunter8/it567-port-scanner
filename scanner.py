@@ -204,7 +204,7 @@ def main():
     # grab command line arguments
     parser = argparse.ArgumentParser()
     host_group = parser.add_mutually_exclusive_group(required=True)
-    host_group.add_argument('--host', help="The host you want to scan. Range (192.168.0.1-192.168.0.255) or subnet mask (192.168.0.0/24) allowed", type=str, action="store")
+    host_group.add_argument('--host', help="The host you want to scan. Range (192.168.0.1-192.168.0.255), subnet mask (192.168.0.0/24), or comma separated (192.168.0.5,192.168.0.10) allowed", type=str, action="store")
     host_group.add_argument('-a', help="Text file with 1 host per line", type=str, action="store")
 
     port_group = parser.add_mutually_exclusive_group(required=True)

@@ -25,15 +25,17 @@ usage: scanner.py [-h] (--host HOST | -a A) (-p PORT | -I | -T)
 
 optional arguments:
   -h, --help            show this help message and exit
-  --host HOST           The host you want to scan. Range
-                        (192.168.0.1-192.168.0.255) or subnet mask
-                        (192.168.0.0/24) allowed
+  --host HOST           The host you want to scan.
+			Use one of following formats:
+				Range (192.168.0.1-192.168.0.255)
+				Subnet mask (192.168.0.0/24)
+				Comma separated (192.168.0.5,192.168.0.10)
   -a A                  Text file with 1 host per line
   -p PORT, --port PORT  The port you want to scan
   -I, --icmp            Perform ICMP echo request
   -T, --traceroute      Perform UDP traceroute
   --type {tcp_connect,tcp_stealth,udp}
-                        The scan type you want to perform (Default:
-                        tcp_connect)
+                        The scan type you want to perform
+			(Default: tcp_connect)
   --html HTML           Store results to HTML file
 ```
